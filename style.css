@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    background-color: rgb(161, 219, 161);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pannel{
+    height: 80%;
+    width: 80%;
+    background-color: aliceblue;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#upannel {
+    height: 20%;
+    background-color: rgb(43, 87, 43);
+    display: flex;
+    align-items: center ;
+    color: aliceblue;
+    padding: 0 20px;
+    justify-content: space-around;
+    padding: 0 10%;
+}
+
+.elem{
+    display: flex;
+    align-items: center;
+}
+
+
+.box{
+    height: 60px;
+    width: 70px;
+    background-color: aliceblue;
+    border-radius: 10%;
+    margin: 0 10px;
+    color: rgb(50, 85, 50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.box:hover{
+    font-size: xx-large;
+}
+#lowpannel{
+    height: 80%;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.bubble{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    background-color: rgb(86, 112, 86);
+    border-radius: 50%;
+    font-weight: 500;
+    font-size: large;
+    cursor: pointer;
+}
+.bubble:hover{
+    background-color: rgb(55, 72, 55);
+}
+
+.btn {
+    padding: 25px 55px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(59, 91, 59);
+    color: aliceblue;
+    font-size: xx-large;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+@keyframes sizings{
+    0%   {scale: 1;}
+  100% {scale: 1.2;}
+}
+
+.btn:hover{
+    background-color: rgb(42, 69, 42);
+    animation: sizings 4s ease-in 0.5s infinite alternate ;
+}
